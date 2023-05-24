@@ -38,11 +38,6 @@ class JokesContentViewModel : ViewModel() {
 
     private val savedList = mutableListOf<JokesContent>()
 
-
-    // cold flow: no se ton tai trong bo nho ke ca khi k co ai subscribe (lang nghe) // k control dc lifecycle  abng statein
-    // hot flow: no se ton tai trong bo nho khi co nguoi lang nghe con k thi no k co // e control dc
-
-    //    private val jokes = MutableStateFlow(jokesMock[0])
     private val jokes = MutableStateFlow(generateAnotherJoke())
 
     val jokesContent =

@@ -267,7 +267,7 @@ fun Description(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
             .padding(horizontal = 10.dp)
-            .fillMaxWidth()
+            .fillMaxSize()
             .wrapContentSize(Alignment.Center)
     ) {
         Text(
